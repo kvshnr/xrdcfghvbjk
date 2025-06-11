@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BEM AFINADO</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <style>
+    @font-face {
+      font-family: 'Germania One';
+      src: url('assets/GermaniaOne.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Germania One', cursive;
+    }
+
+    .hero {
+      background-image: url('assets/background01.png');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-container {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .text-container .email {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .text-container .phone {
+      font-size: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="text-container">
+      <div class="email">info@bemafinado.pt</div>
+      <div class="phone">+351  912 005 045</div>
+    </div>
+  </div>
+</body>
+</html>
+
