@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bem Afinado - Clínica do Piano </title>        
+  <title>Bem Afinado - Clínica do Piano</title>        
+  
+  <!-- Favicons -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Font -->
   <style>
     @font-face {
       font-family: 'Germania One';
@@ -14,7 +18,10 @@
       font-weight: normal;
       font-style: normal;
     }
+  </style>
 
+  <!-- Style -->
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -35,11 +42,22 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      padding: 1rem;
     }
 
     .text-container {
       color: white;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .logo {
+      max-width: 200px;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 2rem;
+      display: block;
     }
 
     .text-container h1 {
@@ -68,31 +86,50 @@
       margin: 0 1rem;
       font-size: 2.5rem;
       transition: color 0.3s;
-      z-index: 10;
     }
 
     .social-links a:hover {
       color: #ccc;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .text-container h1 {
+        font-size: 2.5rem;
+      }
+
+      .services {
+        font-size: 1.2rem;
+      }
+
+      .email, .phone {
+        font-size: 2rem;
+      }
+
+      .social-links a {
+        font-size: 1.5rem;
+      }
+
+      .logo {
+        max-width: 150px;
+        margin-bottom: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="hero">
     <div class="text-container">
+      <img src="assets/logo_white.png" alt="Bem Afinado Logo" class="logo">
       <h1>Bem Afinado - Clínica do Piano</h1>
       <div class="services">Afinação | Restauro | Reparação | Limpeza Geral | Silent System | Venda de Pianos novos e usados</div>
       <div class="email">info@bemafinado.pt</div>
       <div class="phone">+351 912 005 045</div>
       <div class="social-links">
-        <a href="https://www.facebook.com/61565429877841" target="_blank" aria-label="Facebook">
-          Facebook
-        </a>
-        <a href="https://www.instagram.com/bem_afinado" target="_blank" aria-label="Instagram">
-          Instagram
-        </a>
+        <a href="https://www.facebook.com/61565429877841" target="_blank" aria-label="Facebook">Facebook</a>
+        <a href="https://www.instagram.com/bem_afinado" target="_blank" aria-label="Instagram">Instagram</a>
       </div>
     </div>
   </div>
 </body>
 </html>
-
